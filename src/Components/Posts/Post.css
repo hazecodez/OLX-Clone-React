@@ -85,3 +85,9 @@
   font-size: 24px;
   color: #002f34;
 }
+.freshcards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adjust the gap between cards */
+  padding-left: 100px;
+}

@@ -4,11 +4,14 @@
 }
 .viewParentDiv .imageShowDiv {
   padding: 16px;
-  width: 70vw;
+  width: 55vw;
+  display: flex;
+  justify-content: center;
+  padding-top: 150px;
 }
 .viewParentDiv .imageShowDiv img {
-  width: 65vw;
-  height: 85vh;
+  width: 35vw;
+  height: 43vh;
 }
 
 .viewParentDiv .rightSection {
@@ -32,12 +35,14 @@
   border-radius: 6px;
   margin-bottom: 2em;
   width: 100%;
+  background-color: hsla(0,0%,85.9%,.6);
 }
 
 .viewParentDiv .rightSection .contactDetails {
   border: 1px solid black;
   padding: 6px;
   border-radius: 6px;
+  background-color: hsla(0,0%,85.9%,.6);
 }
 
 .viewParentDiv .rightSection .contactDetails :first-child {

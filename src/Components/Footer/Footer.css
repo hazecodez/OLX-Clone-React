@@ -25,3 +25,8 @@
 .footerParentDiv .footer p {
   margin: 0;
 }
+
+ul {
+  list-style: none;
+  font-size: 12px;
+}

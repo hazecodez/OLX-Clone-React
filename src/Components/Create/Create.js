@@ -14,7 +14,7 @@ const Create = () => {
   const [price, setPrice] = useState("");
   const [image, setImage] = useState(null);
 
-  // const { firebase } = useContext(FirebaseContext);
+  
   const { user } = useContext(AuthContext);
   const navigate = useNavigate();
 
@@ -41,10 +41,10 @@ const Create = () => {
         alert("Error uploading image: " + error.message);
       },
       () => {
-        // Upload completed successfully, get the download URL
+       
         getDownloadURL(uploadTask.snapshot.ref)
           .then((url) => {
-            // Add the product to the Firestore collection
+            
             const productsCollection = collection(firestore, "products");
             addDoc(productsCollection, {
               name,

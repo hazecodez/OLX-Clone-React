@@ -1,5 +1,5 @@
 import React, { useState , useContext} from 'react';
-// import { FirebaseContext } from '../../Store/Context';
+
 import { signInWithEmailAndPassword } from 'firebase/auth'
 import { auth } from '../../Firebase/config';
 import { useNavigate } from 'react-router-dom/dist';
@@ -12,7 +12,7 @@ import Header from '../Header/Header';
 function Login() {
   const [email,setEmail] = useState('')
   const [password,setPassword] = useState('')
-  // const { firebase } = useContext(FirebaseContext);
+ 
   const navigate = useNavigate();
 
   const loginHandler = (e)=>{

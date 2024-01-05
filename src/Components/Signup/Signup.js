@@ -1,5 +1,5 @@
-import React, { useState, useContext } from "react";
-import { FirebaseContext } from "../../Store/Context";
+import React, { useState } from "react";
+
 import {
   createUserWithEmailAndPassword,
   updateProfile,
@@ -18,8 +18,7 @@ export default function Signup() {
   const [email, setEmail] = useState("");
   const [number, setNumber] = useState("");
   const [password, setPassword] = useState("");
-  // const { firebase } = useContext(FirebaseContext);
-  // const authInstance = getAuth(firebase);
+
 
   const formSubmit = (e) => {
     e.preventDefault();
